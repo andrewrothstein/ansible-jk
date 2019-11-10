@@ -1,0 +1,7 @@
+---
+# vars file for jk
+jk_platform: '{{ jk_os }}-{{ jk_arch }}'
+jk_url: '{{ jk_mirror }}/{{ jk_ver }}/jk-{{ jk_platform }}'
+jk_exe: '{{ jk_install_dir }}/jk-{{ jk_ver }}-{{ jk_platform }}'
+jk_link: '{{ jk_install_dir }}/jk'
+jk_checksum: '{{ jk_checksums[jk_ver][jk_platform] }}'
