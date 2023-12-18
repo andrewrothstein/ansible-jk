@@ -1,9 +1,9 @@
 ---
 # defaults file for jk
-jk_ver: '0.3.2'
+jk_ver: '0.4.0'
 jk_mirror: https://github.com/jkcfg/jk/releases/download
-jk_os: linux
-jk_arch: amd64
+jk_arch_map:
+  x86_64: amd64
 jk_install_dir: /usr/local/bin
 
 jk_checksums:
@@ -12,3 +12,8 @@ jk_checksums:
     darwin-amd64: sha256:36625948799e0e0482cbc76a4bb456d87ddb2ad32dfece8e2142b44e5a92e5c0
     # https://github.com/jkcfg/jk/releases/download/0.3.2/jk-linux-amd64.sha256
     linux-amd64: sha256:84a22074f91d3a4502944a46bcf016fd9989b03e23e72d2bee5b46b31a0ee249
+  '0.4.0':
+    # https://github.com/jkcfg/jk/releases/download/0.4.0/jk-darwin-amd64.sha256
+    darwin-amd64: sha256:e3311fb6ee6d34363484ddd964b8e648fdab35f88feaeacc00c150bd66c16999
+    # https://github.com/jkcfg/jk/releases/download/0.4.0/jk-linux-amd64.sha256
+    linux-amd64: sha256:eb4a833d4aae8fce338b0374fffd0e321fa4641d75170de58491ee2e60d336d0

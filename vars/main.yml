@@ -1,5 +1,7 @@
 ---
 # vars file for jk
+jk_os: '{{ ansible_system | lower }}'
+jk_arch: '{{ jk_arch_map[ansible_architecture] }}'
 jk_platform: '{{ jk_os }}-{{ jk_arch }}'
 jk_url: '{{ jk_mirror }}/{{ jk_ver }}/jk-{{ jk_platform }}'
 jk_exe: '{{ jk_install_dir }}/jk-{{ jk_ver }}-{{ jk_platform }}'

@@ -3,19 +3,9 @@ galaxy_info:
   author: Andrew Rothstein
   description: installs jk
   company: BlackRock Financial Management
-  license:
-    - MIT
+  license: MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
     - name: Alpine
       versions:
         - all
@@ -24,11 +14,20 @@ galaxy_info:
         - all
     - name: Debian
       versions:
-        - buster
-        - jessie
-        - stretch
+        - bookworm
+        - bullseye
+    - name: EL
+      versions:
+        - 8
+        - 9
+    - name: Fedora
+      versions:
+        - 38
+        - 39
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
   galaxy_tags:
     - development
   role_name: jk
-
-dependencies: []
